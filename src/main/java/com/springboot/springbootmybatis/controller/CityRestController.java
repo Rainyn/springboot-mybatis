@@ -12,7 +12,7 @@ public class CityRestController {
 
     @Autowired
     private CityService cityService;
-    //http://localhost:8080/api/city?cityName=%E6%9D%AD%E5%B7%9E
+    //http://localhost:8080/api/city?cityName=杭州
 @RequestMapping(value = "api/city",method = RequestMethod.GET)
     public City findOneCity(String cityName){
         return cityService.findCityByName(cityName);
